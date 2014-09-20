@@ -1,0 +1,33 @@
+{
+  "name": "grunt-slm",
+  "description": "Compile Slm to HTML.",
+  "version": "0.0.1",
+  "author": {
+    "name": "Michael Danilov",
+    "email": "michael@danilov.me",
+    "website": "https://danilov.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MichaelDanilov/grunt-slm"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "slm": "~0.1.3"
+  },
+  "keywords": [
+    "gruntplugin",
+    "slm",
+  ],
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/MichaelDanilov/grunt-slm/issues"
+  },
+  "homepage": "https://github.com/MichaelDanilov/grunt-slm"
+}
