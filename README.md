@@ -2,6 +2,9 @@
 
 > [slm](https://github.com/slm-lang/slm) Slm is a template language for js. Port of [Slim](http://slim-lang.com/) but slimmer :)
 
+## For potential contributors or maintainers
+I don't use it every day, so if you are well versed in Slm and Grunt, I can give you maintainer status.
+
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
 
