@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       
       f.src.forEach(function(filepath) {
         var src = grunt.file.read(filepath);
-        var html = compile(src)();
+        var html = compile(src)(options.data);
         var dest, filename;
 
         if (f.dest.charAt(f.dest.length - 1) === '/') {

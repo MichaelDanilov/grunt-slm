@@ -36,8 +36,7 @@ grunt.initConfig({
 ```
 
 ### Options
-Now I need only to compile, without some options and data.
-
+You can pass data to template which can be accessed through `this`.
 
 ### Usage Examples
 
@@ -45,6 +44,12 @@ Now I need only to compile, without some options and data.
 grunt.initConfig({
 
   slm: {
+    options: {
+      data: {
+        title: 'Hello, world!',
+        text: 'Hello world example for slm template.'
+      }
+    },
 
     // prefix the specified file
     single_file: {
@@ -61,6 +66,18 @@ grunt.initConfig({
   }
 
 });
+```
+
+```slim
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title = this.title
+  body
+    h1 = this.title
+    p
+      | text is ${this.text}
 ```
 
 ## Thanks
