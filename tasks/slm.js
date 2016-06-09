@@ -2,38 +2,38 @@
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('slm', 'Compile from Slm to HTML.', function() {
-    var options = this.options({});
+	grunt.registerMultiTask('slm', 'Compile from Slm to HTML.', function() {
+		var options = this.options({});
 
-    var model = options.data;
-    delete options.data;
+		var model = options.data;
+		delete options.data;
 
-    var compile = require('slm').compile;
-    var path = require('path');
+		var compile = require('slm').compile;
+		var path = require('path');
 
-    this.files.forEach(function(f) {
-      if (!f.src.length) {
-        return grunt.fail.warn('No source files were found.');
-      }
-      
-      f.src.forEach(function(filepath) {
-        options.filename = filepath;
-        var src = grunt.file.read(filepath);
-        var html = compile(src, options)(model);
-        var dest, filename;
+		this.files.forEach(function(f) {
+			if (!f.src.length) {
+				return grunt.fail.warn('No source files were found.');
+			}
 
-        if (f.dest.charAt(f.dest.length - 1) === '/') {
-          filename = path.basename(filepath, '.slm');
-          dest = f.dest + filename + '.html';
-          grunt.file.write(dest, html);
-        } else {
-          dest = f.dest;
-          grunt.file.write(dest, html);
-        }
+			f.src.forEach(function(filepath) {
+				options.filename = filepath;
+				var src = grunt.file.read(filepath);
+				var html = compile(src, options)(model);
+				var dest, filename;
 
-        grunt.log.writeln('File ' + dest + ' created.');
-      });
-    });
-  });
+				if (f.dest.charAt(f.dest.length - 1) === '/') {
+					filename = path.basename(filepath, '.slm');
+					dest = f.dest + filename + '.html';
+					grunt.file.write(dest, html);
+				} else {
+					dest = f.dest;
+					grunt.file.write(dest, html);
+				}
+
+				grunt.log.writeln('File ' + dest + ' created.');
+			});
+		});
+	});
 
 };
