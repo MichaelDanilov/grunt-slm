@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title My store
+		meta name="keywords" content="template language"
+		meta name="author" content=this.author
+		javascript:
+			alert('Welcome to my store!')
+
+	body
+		== partial('test-partial-header', this)
+
+		- if this.items.length
+			table#items
+				- this.items.forEach(function(item))
+					tr
+						td.name = item.name
+						td.price = item.price
+		- else
+			p All food are as gone. Sorry!
+
+		== partial('test-partial-footer', this)

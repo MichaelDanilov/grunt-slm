@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title My store
+    meta name="keywords" content="template language"
+    meta name="author" content=this.author
+    javascript:
+      alert('Welcome to my store!')
+
+  body
+    h1 I'm selling some food
+
+    #content
+      p All or this food are organic and healthy ;).
+
+    - if this.items.length
+      table#items
+        - this.items.forEach(function(item))
+          tr
+            td.name = item.name
+            td.price = item.price
+    - else
+      p All food are as gone. Sorry!
+
+    div id="footer"
+      | Copyright &copy; ${this.year} ${this.author}
