@@ -2,10 +2,8 @@
 
 module.exports = function(grunt) {
 
-
   grunt.registerMultiTask('slm', 'Compile from Slm to HTML.', function() {
-    var options = this.options({
-    });
+    var options = this.options({});
 
     var model = options.data;
     delete options.data;
@@ -19,6 +17,7 @@ module.exports = function(grunt) {
       }
       
       f.src.forEach(function(filepath) {
+        options.filename = filepath;
         var src = grunt.file.read(filepath);
         var html = compile(src, options)(model);
         var dest, filename;
