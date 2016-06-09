@@ -7,6 +7,9 @@ module.exports = function(grunt) {
     var options = this.options({
     });
 
+    var model = options.data;
+    delete options.data;
+
     var compile = require('slm').compile;
     var path = require('path');
 
@@ -17,7 +20,7 @@ module.exports = function(grunt) {
       
       f.src.forEach(function(filepath) {
         var src = grunt.file.read(filepath);
-        var html = compile(src)(options.data);
+        var html = compile(src, options)(model);
         var dest, filename;
 
         if (f.dest.charAt(f.dest.length - 1) === '/') {
