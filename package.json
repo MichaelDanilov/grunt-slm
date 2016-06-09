@@ -5,11 +5,21 @@
   "author": {
     "name": "Michael Danilov",
     "email": "michael@danilov.me",
-    "website": "https://danilov.me/"
+    "url": "https://danilov.me/"
   },
+  "contributors": [
+    {
+      "name": "grabus",
+      "url": "https://github.com/grabus"
+    },
+    {
+      "name": "Hugo Freire Gil",
+      "url": "https://github.com/TLmaK0"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:MichaelDanilov/grunt-slm"
+    "url": "https://github.com/MichaelDanilov/grunt-slm"
   },
   "license": "MIT",
   "engines": {
@@ -23,9 +33,9 @@
   },
   "keywords": [
     "gruntplugin",
-    "slm"
+    "slm",
+    "slim"
   ],
-  "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/MichaelDanilov/grunt-slm/issues"
   },
