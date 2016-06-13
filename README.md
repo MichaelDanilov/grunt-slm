@@ -2,6 +2,7 @@
 [![Travis](https://img.shields.io/travis/MichaelDanilov/grunt-slm.svg?maxAge=2592000)](https://travis-ci.org/MichaelDanilov/grunt-slm) [![GitHub issues](https://img.shields.io/github/issues/MichaelDanilov/grunt-slm.svg)](https://github.com/MichaelDanilov/grunt-slm/issues) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/MichaelDanilov/grunt-slm/master/LICENSE)
 [![David](https://img.shields.io/david/MichaelDanilov/grunt-slm.svg?maxAge=2592000)]() [![David](https://img.shields.io/david/dev/MichaelDanilov/grunt-slm.svg?maxAge=2592000)]()
 [![npm](https://img.shields.io/npm/dm/grunt-slm.svg?maxAge=2592000)](https://www.npmjs.com/package/grunt-slm) [![npm](https://img.shields.io/npm/dt/grunt-slm.svg?maxAge=2592000)](https://www.npmjs.com/package/grunt-slm)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/MichaelDanilov/grunt-slm)
 
 > [slm](https://github.com/slm-lang/slm) Slm is a template language for js. Port of [Slim](http://slim-lang.com/) but slimmer :)
 

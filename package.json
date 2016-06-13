@@ -1,7 +1,7 @@
 {
   "name": "grunt-slm",
   "description": "Compile Slm to HTML.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Michael Danilov",
     "email": "michael@danilov.me",
@@ -43,6 +43,7 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0"
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-xo": "^0.13.0"
   }
 }
